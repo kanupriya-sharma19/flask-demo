@@ -21,8 +21,8 @@
       <div class="container my-3">
         <h1>Your todo</h1>
         
-          <tbody>
             {% if allTodo|length==0 %}
+            <tbody>
             <div class="alert alert-dark" role="alert">
             No records
             </div>
@@ -53,9 +53,11 @@
                 <a href="/delete/{{todo.sno}}"><button type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</button>
               </td>
             </tr>
-          </tbody>
-        </table>
+       
+        
             {% endfor %}
+          
+          </tbody></table>
             {% endif %}
         
       </div>
